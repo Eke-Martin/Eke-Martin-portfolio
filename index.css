@@ -1,0 +1,150 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  background-color: white;
+}
+
+h1,
+h2,
+h3 {
+  display: block;
+  font-weight: 700;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  min-height: 100vh;
+  background-color: hsl(210, 71%, 3%);
+}
+
+/* Center the contents in the middle of the page. */
+.wrapper {
+  width: min(1110px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  color: rgb(123, 247, 247);
+  position: relative;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
+}
+
+.hero-img {
+  border-radius: 100%;
+  display: flex;
+  box-shadow: 1px 1px 20px hsl(213, 92%, 56%);
+}
+
+.hero-img:hover {
+  box-shadow: 1px 1px 20px hsl(213, 84%, 65%);
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgb(3, 30, 30);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  background-color: transparent;
+  animation: rotate 2s infinite linear;
+  transition-property: background-color, color;
+}
+
+.cta:hover {
+  transition: all 0.18s ease;
+  backdrop-filter: blur(40px);
+  backface-visibility: hidden;
+  color: aliceblue;
+  background-color: rgb(1, 60, 60);
+  box-shadow: 1px 1px 20px rgb(123, 247, 247);
+}
+
+.social {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.social .social-icon {
+  display: flex;
+  margin-top: 30px;
+  gap: 1.2rem;
+}
+
+.social .social-item {
+  display: grid;
+  height: 2.3rem;
+  width: 2.3rem;
+  place-content: center;
+  border-radius: 10%;
+  transition: 0.3s ease;
+  animation: rotate 2s infinite linear;
+  background-color: rgb(123, 247, 247);
+  border: aqua;
+  /* Reflect effect */
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px #03e914, 0 0 15px #03e914, 0 0 25px #03e914, 0 0 100px #03e914;
+}
+
+.social .social-item:hover {
+  border-color: aqua;
+  background-color: rgb(123, 247, 247);
+  box-shadow: 1px 1px 20px hsl(213, 92%, 56%);
+}
+
+.service {
+  padding-block: 2rem;
+  background-position: top center;
+}
+
+.service .service-title {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  color: aliceblue;
+}
