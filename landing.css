@@ -1,0 +1,156 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   background-attachment: fixed;
+}
+
+section {
+   min-height: 100vh;
+   height: 100%;
+}
+
+#hero {
+   background-color: hsl(210, 71%, 3%);
+   padding-top: 1.2rem;
+   padding-bottom: 1.25rem;
+   display: flex;
+   background-position: top center;
+   position: relative;
+   margin: 0 auto;
+   padding: 0 50px;
+   justify-content: flex-start;
+}
+
+.container {
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+#hero h1 {
+   display: flex;
+   width: fit-content;
+   font-size: 3.2rem;
+   color: rgb(123, 247, 247);
+   position: relative;
+   animation: text_reveal .5s ease forwards;
+   animation-delay: 1s;
+}
+
+#hero h2 {
+   color: hsl(207, 88%, 74%);
+   font-size: 2rem;
+   width: fit-content;
+}
+
+.cta {
+   display: inline-block;
+   padding: 10px 30px;
+   color: white;
+   background-color: transparent;
+   border: 2px solid rgb(3, 30, 30);
+   font-size: 1rem;
+   text-transform: uppercase;
+   letter-spacing: .1rem;
+   margin-top: 30px;
+   text-decoration: none;
+   transition: .3s ease;
+   background-color: transparent;
+   animation: rotate 2s infinite linear;
+   transition-property: background-color, color;
+}
+
+.cta:hover {
+   transition: all 0.18s ease;
+   backdrop-filter: blur(40px);
+   backface-visibility: hidden;
+   color: aliceblue;
+   background-color: rgb(1, 60, 60);
+   box-shadow: 1px 1px 20px rgb(123, 247, 247);
+}
+
+img {
+  border-radius: 100%;
+  display: flex;
+  box-shadow: 1px 1px 20px hsl(213, 92%, 56%);
+}
+
+img:hover {
+   box-shadow: 1px 1px 20px hsl(213, 84%, 65%);
+}
+
+#hero .social {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 1.25rem;
+}
+
+#hero .social-icon {
+   display: flex;
+   margin-top: 30px;
+   gap: 1.2rem;
+   box-sizing: content-box;
+
+}
+
+#hero .social-item {
+   display: flex;
+   height: 2.30rem;
+   width: 2.30rem;
+   align-items: center;
+   place-content: center;
+   border-radius: 10%;
+   transition: .3s ease;
+   animation: rotate 2s infinite linear;
+   background-color: rgb(123, 247, 247);
+   border: aqua;
+   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+   box-shadow: 0 0 5px #03e914, 0 0 15px #03e914, 0 0 25px #03e914, 0 0 100px #03e914,;
+}
+
+#hero .social-item:hover {
+   border-color: aqua;
+   background-color: rgb(123, 247, 247);
+   box-shadow: 1px 1px 20px hsl(213, 92%, 56%);
+}
+
+#service {
+   background-color: hsl(210, 71%, 3%);
+   padding-top: 1.2rem;
+   padding-bottom: 1.25rem;
+   display: flex;
+   background-position: top center;
+   position: relative;
+   margin: 0 auto;
+   padding: 0 50px;
+   justify-content: flex-start;
+}
+
+#service .service-container {
+   flex-direction: column;
+   text-align: center;
+   max-width: 1500px;
+   margin: 0 auto;
+   padding: 100px 0;
+   width: 100%;
+}
+
+
+
+#service .service-header {
+   gap: 1.2rem;
+   text-align: center;
+}
+
+#service .service-title {
+   text-transform: capitalize;
+   font-size: 3rem;
+   color: aliceblue;
+   text-decoration: none;
+}
